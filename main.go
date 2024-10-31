@@ -5,6 +5,8 @@ import "fmt"
 func main() {
 	l := list_of_primeNumbers(3, 110)
 	fmt.Println(l)
+	d := list_of_primeNumbers(110, 200)
+	fmt.Println(d)
 
 }
 
