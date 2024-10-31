@@ -7,6 +7,8 @@ func main() {
 	fmt.Println(l)
 	d := list_of_primeNumbers(110, 200)
 	fmt.Println(d)
+	s := number_of_primes(3, 100000)
+	fmt.Println(s)
 
 }
 
@@ -30,4 +32,15 @@ func list_of_primeNumbers(m, n int) []int {
 	}
 	fmt.Printf("list of prime numbers between %d and %d is :", m, n)
 	return list
+}
+
+func number_of_primes(m, n int) int {
+	//this func returns number of prime number between m and n
+	i := 0
+	for v := m; v <= n; v++ {
+		if is_prime(v) {
+			i += 1
+		}
+	}
+	return i
 }
